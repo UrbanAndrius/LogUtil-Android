@@ -12,7 +12,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-public final class LogUtil {
+public class LogUtil {
 
     private static final String TAG = "LogUtil";
     private static final String DEBUG = "*** DEBUG ***";
@@ -20,12 +20,8 @@ public final class LogUtil {
 
     private static final DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HH:mm:ss", Locale.US);
 
-
     private static File LOG_FILE;
     private static int FILE_LENGTH = 30_000;
-
-    private LogUtil() {
-    }
 
     public static void init(String appTag) {
         APP_TAG = appTag;
