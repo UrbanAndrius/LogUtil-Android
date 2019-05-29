@@ -38,6 +38,18 @@ public class LogUtil {
         FILE_LENGTH = fileLength;
     }
 
+    public static void d(int number) {
+        d(String.valueOf(number));
+    }
+
+    public static void d(double number) {
+        d(String.valueOf(number));
+    }
+
+    public static void d(float number) {
+        d(String.valueOf(number));
+    }
+
     public static void d(String message) {
         d(message, false);
     }
